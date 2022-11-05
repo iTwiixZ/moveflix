@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&family=Oswald:wght@400;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+$black: #060d2c;
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #141414;
+  font-family: "Oswald", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}

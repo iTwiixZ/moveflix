@@ -1,0 +1,43 @@
+.filter {
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  gap: 10px;
+  width: 450px;
+  button {
+    border: none;
+    padding: 8px;
+    width: auto;
+    background-color: inherit;
+    cursor: pointer;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 14px;
+    transition: all ease-in-out 250ms;
+    border-radius: 10px;
+    &:hover {
+      transform: scale(1.088);
+      background-color: #e50914;
+      border-radius: 10px;
+      color: white;
+    }
+  }
+}
+#tags {
+  background-color: blue;
+  width: 180px;
+}
+.tag {
+  color: red;
+}
+.btn-sort {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 375px) {
+  .filter {
+    width: 330px;
+  }
+}
