@@ -1,0 +1,113 @@
+.modal-container {
+  display: flex;
+  justify-content: center;
+}
+.modal {
+  width: 850px;
+  background-color: white !important;
+  padding: 15px;
+  font-family: "Noto Sans", sans-serif !important;
+  margin-left: auto;
+  margin-right: auto;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.modal-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+  font-family: "Noto Sans", sans-serif;
+  h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-family: "Oswald", sans-serif;
+  }
+  p {
+    margin-bottom: 5px;
+  }
+  span {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  h3 {
+    text-align: center;
+    margin-top: 15px;
+  }
+}
+.btn-infos {
+  color: white !important;
+  background-color: red !important;
+  margin-bottom: 20px !important;
+  margin-top: 15px !important;
+}
+
+.casting {
+  width: 650px !important;
+  height: 200px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    object-fit: contain;
+  }
+  p {
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+
+.favoris {
+  color: black;
+  width: 150px;
+  margin-top: 15px;
+  padding: 10px;
+  border: none;
+  font-family: "Noto Sans", sans-serif;
+  border-radius: 8px;
+  cursor: pointer;
+  &:hover {
+    color: white;
+    background-color: black;
+  }
+}
+
+.cast_card {
+  background-color: white;
+  height: 100%;
+  border-radius: 10px 10px 10px 10px;
+}
+.backdrop-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 374px) and (max-width: 768px) {
+  .modal {
+    width: 325px;
+    overflow-x: hidden;
+  }
+  .modal-container {
+    width: auto;
+  }
+  .casting {
+    width: 100%;
+  }
+  .profile-picture {
+    width: 150px;
+    img {
+      width: 100%;
+      object-position: center;
+    }
+  }
+}
